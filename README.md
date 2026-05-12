@@ -85,6 +85,3 @@ It highlights my:
 
 ---
 
-![image alt](https://github.com/cloud-srushti/My-Portpolio/blob/47ed9c83560098f19fe32e84705bf5f51f57a961/my%20personal%20porpolio.png)
-
----
