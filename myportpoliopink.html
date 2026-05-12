@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Srushti Shinde — Portfolio</title>
+  <meta name="description" content="Portfolio of Srushti Shinde — AWS & DevOps intern from Coding Cloud. Projects, skills, and contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#1a0b15; --card:#220d1d; --muted:#f4c4d4; --accent:#ff66b2; --glass: rgba(255,255,255,0.05);
+      --radius:14px; --maxw:1100px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; background:linear-gradient(180deg,#190515 0%, #300b28 100%); color:#ffe6f2}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:var(--maxw);margin:48px auto;padding:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#ff66b2,#ff99cc);display:flex;align-items:center;justify-content:center;font-weight:700;color:#330a1a}
+    nav a{margin-left:18px;font-weight:600;color:var(--muted)}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px;align-items:center}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));border-radius:var(--radius);padding:20px;box-shadow:0 6px 24px rgba(0,0,0,0.5)}
+    h1{margin:0;font-size:28px;color:#fff0f6}
+    .subtitle{color:var(--muted);margin-top:8px}
+
+    .about p{line-height:1.6;color:#ffe6f2}
+    .cta{margin-top:18px;display:flex;gap:12px}
+    .btn{background:linear-gradient(90deg,var(--accent),#ff99cc);border:none;padding:10px 14px;border-radius:10px;color:#330a1a;font-weight:700;cursor:pointer}
+    .outline{border:1px solid rgba(255,255,255,0.1);padding:10px 14px;border-radius:10px;background:transparent;color:var(--muted)}
+
+    .stats{display:flex;gap:12px;margin-top:16px}
+    .stat{background:var(--glass);padding:12px;border-radius:10px;min-width:110px;text-align:center}
+    .stat b{display:block;font-size:18px}
+
+    .projects{margin-top:28px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .project-card{padding:16px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.03), rgba(255,255,255,0.04));min-height:140px;display:flex;flex-direction:column;justify-content:space-between}
+    .project-card h3{margin:0;color:#fff0f6}
+    .tags{margin-top:8px;font-size:13px;color:var(--muted)}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:rgba(255,255,255,0.08);padding:8px 10px;border-radius:999px;font-weight:600;color:#fff0f6}
+
+    footer{margin-top:44px;text-align:center;color:var(--muted);font-size:14px;padding:18px}
+
+    .contact-form{display:grid;gap:10px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.1);padding:10px;border-radius:8px;color:inherit}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .avatar{width:64px;height:64px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">SS</div>
+        <div>
+          <div style="font-weight:700">Srushti Shinde</div>
+          <div style="font-size:13px;color:var(--muted)">AWS & DevOps · Coding Cloud</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="card about">
+          <h1>Hi — I'm Srushti.</h1>
+          <div class="subtitle">An AWS & DevOps intern from Coding Cloud, passionate about automation and cloud technologies.</div>
+          <p style="margin-top:14px">I completed my internship focused on AWS and DevOps where I worked on automation, CI/CD, and deploying apps to cloud environments. I enjoy building scalable, efficient systems and exploring new technologies.</p>
+
+          <div class="cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="outline" href="#contact">Hire Me</a>
+          </div>
+
+          <div class="stats" aria-hidden>
+            <div class="stat"><b>3+</b><span style="color:var(--muted);font-size:13px">Projects</span></div>
+            <div class="stat"><b>Intern</b><span style="color:var(--muted);font-size:13px">AWS & DevOps</span></div>
+            <div class="stat"><b>Coding Cloud</b><span style="color:var(--muted);font-size:13px">Institute</span></div>
+          </div>
+        </div>
+
+        <aside class="card" style="display:flex;flex-direction:column;gap:12px">
+          <div style="border-radius:10px;overflow:hidden;background:linear-gradient(180deg,#3b0a2a,#2a061d);padding:18px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center">
+            <div style="width:120px;height:120px;border-radius:14px;background:linear-gradient(135deg,#ff66b2,#ff99cc);display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:800;color:#330a1a">SS</div>
+            <div style="font-weight:700">Srushti Shinde</div>
+            <div style="font-size:13px;color:var(--muted)">AWS & DevOps · Coding Cloud</div>
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <a href="#contact" class="outline">Contact</a>
+              <a class="btn" href="#projects">Projects</a>
+            </div>
+          </div>
+
+          <div style="padding:10px;border-radius:10px;background:rgba(255,255,255,0.04)">
+            <div style="font-size:13px;color:var(--muted)">Quick links</div>
+            <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+              <a href="#projects">Project list</a>
+              <a href="#skills">Skills & Tools</a>
+              <a href="#contact">Download Resume</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2 style="margin:0 0 12px 0">Selected projects</h2>
+        <div class="grid">
+          <article class="project-card card">
+            <div>
+              <h3>My VPC Web Server (AWS)</h3>
+              <p class="tags">S3 · EC2 · VPC · Security Groups</p>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+              <a href="#" style="font-weight:700">View details →</a>
+              <span style="font-size:13px;color:var(--muted)">2025</span>
+            </div>
+          </article>
+
+          <article class="project-card card">
+            <div>
+              <h3>CI/CD Pipeline for Web App</h3>
+              <p class="tags">GitHub Actions · Docker · ECS / ECR</p>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+              <a href="#" style="font-weight:700">View details →</a>
+              <span style="font-size:13px;color:var(--muted)">2025</span>
+            </div>
+          </article>
+
+          <article class="project-card card">
+            <div>
+              <h3>Image Upload & Analysis App</h3>
+              <p class="tags">S3 · Lambda · Rekognition · DynamoDB</p>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+              <a href="#" style="font-weight:700">View details →</a>
+              <span style="font-size:13px;color:var(--muted)">2025</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" style="margin-top:28px">
+        <h2>Skills & Tools</h2>
+        <div class="skills">
+          <div class="skill">AWS (EC2, S3, VPC)</div>
+          <div class="skill">Docker</div>
+          <div class="skill">Git / GitHub</div>
+          <div class="skill">CI/CD (GitHub Actions)</div>
+          <div class="skill">Linux</div>
+          <div class="skill">Bash / Shell</div>
+          <div class="skill">Terraform (basic)</div>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:28px">
+        <h2>Contact</h2>
+        <div style="display:grid;grid-template-columns:1fr 340px;gap:18px;margin-top:12px;align-items:start">
+          <form class="card contact-form" action="mailto:cloud.srushti@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" rows="5" placeholder="Message"></textarea>
+            <div style="display:flex;gap:10px">
+              <button type="submit" class="btn">Send</button>
+              <a class="outline" href="mailto:cloud.srushti@gmail.com">Email me</a>
+            </div>
+          </form>
+
+          <aside class="card" style="padding:18px">
+            <div style="font-weight:700">Get in touch</div>
+            <p style="color:var(--muted);margin-top:8px">Email: <a href="mailto:cloud.srushti@gmail.com">cloud.srushti@gmail.com</a></p>
+            <p style="color:var(--muted)">LinkedIn: <a href="https://www.linkedin.com/in/cloud-srushti" target="_blank" rel="noopener">linkedin.com/in/cloud-srushti</a></p>
+            <p style="color:var(--muted)">Location: Mumbai, India</p>
+            <div style="margin-top:8px">
+              <a class="btn" href="#">Download Resume</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Srushti Shinde — Built with 💖 · Available for internships & entry-level roles
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
